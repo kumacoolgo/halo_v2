@@ -124,7 +124,7 @@ services:
     restart: always
 
   halo:
-    image: halohub/halo:2.24
+    image: halohub/halo:2.22
     container_name: halo
     volumes:
       - ./halo:/root/.halo2
