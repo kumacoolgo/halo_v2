@@ -124,7 +124,7 @@ services:
     restart: always
 
   halo:
-    image: halohub/halo:2.22
+    image: halohub/halo:2.22.4
     container_name: halo
     volumes:
       - ./halo:/root/.halo2
@@ -146,7 +146,7 @@ services:
     restart: always
     environment:
       - USERNAME=admin
-      - PASSWORD=changeme
+      - PASSWORD=Ok65321
       - NEXT_PUBLIC_STORAGE_TYPE=kvrocks
       - KVROCKS_URL=redis://kvrocks:6666
       - SITE_BASE=https://$DOMAIN/tv
